@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Incident Runbook AI — Zion Tech Group</title>
+<meta name="description" content="Generate executable incident runbooks from alert signals. Free tool from the Zion AI App Network.">
+<style>body{font-family:system-ui,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem;color:#0f172a}header{background:#7f1d1d;color:#fff;padding:2rem;border-radius:12px}input,select{width:100%;padding:.6rem;margin:.4rem 0;border:1px solid #cbd5e1;border-radius:8px}button{background:#7f1d1d;color:#fff;padding:.7rem 1.4rem;border:0;border-radius:8px;cursor:pointer}#out{background:#f1f5f9;padding:1rem;border-radius:8px;white-space:pre-wrap;margin-top:1rem}a{color:#7f1d1d}</style></head>
+<body>
+<header><h1>Incident Runbook AI</h1><p>Turn any alert into a guided, executable runbook — free, in your browser.</p></header>
+<h2>Runbook Generator (demo)</h2>
+<select id="sev"><option>SEV1 — full outage</option><option>SEV2 — major degradation</option><option>SEV3 — minor issue</option></select>
+<input id="svc" placeholder="Service name (e.g. payments-api)">
+<button onclick="gen()">Generate runbook</button>
+<div id="out"></div>
+<h2>Explore the Zion AI App Network</h2>
+<ul>
+<li><a href="https://ziontechgroup.com/api-health-probe/">API Health Probe</a></li>
+<li><a href="https://ziontechgroup.com/metric-anomaly-alerter/">Metric Anomaly Alerter</a></li>
+<li><a href="https://ziontechgroup.com/zion-ai-postmortem/">AI Postmortem Generator</a></li>
+<li><a href="https://ziontechgroup.com/sla-risk-forecaster/">SLA Risk Forecaster</a></li>
+<li><a href="https://ziontechgroup.com/zion-app-network/">All apps →</a></li>
+</ul>
+<footer><p>© <a href="https://ziontechgroup.com">Zion Tech Group</a> — <a href="https://github.com/Zion-support/incident-runbook-ai">Source on GitHub</a></p></footer>
+<script>
+function gen(){
+  const sev=document.getElementById('sev').value, svc=document.getElementById('svc').value||'service';
+  document.getElementById('out').textContent=
+`RUNBOOK: ${svc} — ${sev}
+1. Confirm impact: check dashboards + API Health Probe for ${svc}.
+2. Page on-call owner; open incident channel; assign IC.
+3. Capture baseline metrics (Metric Anomaly Alerter snapshot).
+4. Roll back last deploy if within 60 min; otherwise fail over.
+5. Update status page every 15 min.
+6. After mitigation: hand off to AI Postmortem Generator within 48h.`;
+}
+</script>
+</body></html>
