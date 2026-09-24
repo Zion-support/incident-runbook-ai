@@ -1,28 +1,30 @@
-# Incident Runbook AI
+# 🚨 Incident Runbook AI
 
-AI-generated and executable incident response runbooks. Part of the **Zion AI App Network** — 100+ interlinked AI business tools by [Zion Tech Group](https://ziontechgroup.com).
+**Incident Runbook AI** — auto-generated, executable incident runbooks that cut MTTR. Part of the **Zion Tech Group App Network**.
 
-## What it does
+🌐 Live: [ziontechgroup.com/incident-runbook-ai/](https://ziontechgroup.com/incident-runbook-ai/)
 
-- Generates runbooks from alerts, topology and past incident history
-- Executes safe remediation steps with approval gates and full audit trail
-- Learns from every incident to keep runbooks current
-- Hands off to postmortem and timeline tooling automatically
+## Features
+- Auto-generate runbooks from alerts, logs & past incidents
+- Step-by-step guided remediation with rollback safety
+- Post-incident timeline reconstruction and learning loop
+- Integrates with on-call, chat, and ticketing tools
 
-## Live app
+## 🔗 Related apps in the network
+- [AI Incident Timeline](https://github.com/Zion-support/ai-incident-timeline) — incident chronology builder
+- [AI Infrastructure Monitor](https://github.com/Zion-support/ai-infrastructure-monitor) — full-stack infra signals
+- [AI API Health Monitor](https://github.com/Zion-support/ai-api-health-monitor) — API uptime & latency
+- [Agent SLA Monitor](https://github.com/Zion-support/agent-sla-monitor) — SLA compliance tracking
+- [SLA Forecast Guardian](https://github.com/Zion-support/sla-forecast-guardian) — predict SLA breaches
 
-https://ziontechgroup.com/incident-runbook-ai/
+---
 
-## Works with
+## 🌐 Part of the Zion Tech Group App Network
 
-- [Zion AI Incident Responder](https://ziontechgroup.com/zion-ai-incident-responder/) · [AI Incident Timeline](https://ziontechgroup.com/ai-incident-timeline/)
-- [Postmortem Generator](https://ziontechgroup.com/postmortem-generator/) · [SLO & Error Budget Calculator](https://ziontechgroup.com/slo-calculator/)
-- [Warranty Claim Triager](https://ziontechgroup.com/warranty-claim-triager/) · [AI Procurement Copilot](https://ziontechgroup.com/ai-procurement-copilot/)
+- 🏠 Homepage: [ziontechgroup.com](https://ziontechgroup.com)
+- 🗂️ Network hub: [zion-support.github.io/zion-network/](https://zion-support.github.io/zion-network/) · [network.ziontechgroup.com](https://network.ziontechgroup.com)
+- 📇 Master index: [APPS_NETWORK.md](https://github.com/Zion-support/zion-network/blob/main/APPS_NETWORK.md)
+- 🧭 Category: [Procurement, Vendor & IT Reliability AI](https://github.com/Zion-support/zion-network/blob/main/network/procurement-vendor-it-reliability.md)
+- 📣 Showcase: [ziontechgroup.com/app-network/](https://ziontechgroup.com/app-network/)
 
-## Network
-
-- 🗺️ Master directory: https://github.com/Zion-support/zion-app-network
-- 📇 Index: [APPS_INDEX.md](https://github.com/Zion-support/zion-app-network/blob/main/APPS_INDEX.md) · [CATALOG.md](https://github.com/Zion-support/zion-app-network/blob/main/CATALOG.md)
-- 💳 Plans: https://ziontechgroup.com/en/plans/ · 🆓 Free AI Discovery: https://ziontechgroup.com/discovery/
-
-© 2026 Zion Tech Group · https://ziontechgroup.com
+*All apps interlinked · CC commercial@ziontechgroup.com*
